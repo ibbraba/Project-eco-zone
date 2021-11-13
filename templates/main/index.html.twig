@@ -1,0 +1,102 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <div class="acceuil-field">
+
+
+
+
+        <div class="main-article">
+            <div class="main-article-text" style="color: white">
+
+            <h4>{{ mainarticle.titre }}</h4>
+
+            <p> {{ mainarticle.preview }} </p>
+
+                <a class="btn lire-article" href="{{ path('article_show', {id: mainarticle.id} ) }}">Lire l'article </a>
+
+            </div>
+
+            <div class="main-image">
+                <img src="{{ asset('build/images/' ~ mainarticle.imgbg) }}" alt="">
+            </div>
+
+        </div>
+
+
+
+        <div class="acceuil-articles">
+
+           {# TODO Bring Newarticle section  #}
+
+
+
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">{{ quote.contenu | raw }}</p>
+                <p class="blockquote-footer">{{ quote.auteur }} </p>
+            </blockquote>
+
+
+            {% for article in newarticles %}
+            {% if article.id != mainarticle.id and loop.index < 3 %}
+            <div class="top-articles">
+
+
+
+                <div class="main-article-text">
+
+                    <h4>{{ article.titre }}</h4>
+
+                    <p> {{ article.preview }} </p>
+
+                    <a class="btn lire-article" href="{{ path('article_show', {id: article.id} ) }}">Lire l'article </a>
+
+                </div>
+
+
+                <div class="main-image">
+                    <img src="{{ asset('build/images/' ~ article.imgbg) }}" alt="">
+                </div>
+
+
+            </div>
+            {% endif %}
+            {% endfor %}
+
+
+         <div class="main-book-review">
+             <h4>Notre derniere Review</h4>
+
+             <div class="latest-articles">
+
+
+                 {% if book.imgbg %}
+                 <div class="main-image">
+                     <img src="{{ asset('build/images/' ~ book.imgbg) }}" alt="">
+                 </div>
+                 {% endif %}
+
+                 <div class="main-article-text" style="text-align: end">
+
+                     <h4>{{ book.titre }}</h4>
+
+                     <p> {{ book.preview }} </p>
+
+                     <a class="btn  lire-article" href="{{ path('article_show', {id: book.id} ) }}">Lire l'article </a>
+
+                 </div>
+
+             </div>
+         </div>
+
+
+    </div>
+
+
+
+</div>
+
+{% endblock %}
+
+

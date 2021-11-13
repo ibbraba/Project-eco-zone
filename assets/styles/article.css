@@ -1,0 +1,158 @@
+/* TODO Design single article page */
+
+/* TODO Design Category Page (Trending article + Litle Article) */
+
+.article-show {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    color: black;
+    opacity: 0.7;
+    margin: 45px 20px;
+    padding: 9px;
+    /* border-left: 10px solid black; */
+    /* border-top: 15px solid black; */
+    /* border-bottom: 15px solid black; */
+    /* border-right: 15px solid black; */
+    position: relative;
+    background-color: #faf4f4;
+    /* margin-bottom: 35px; */
+    min-height: 80px;
+}
+
+.article-container{
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+.pub-left{
+    position: absolute;
+    right: 10%;
+
+}
+
+
+.article-bottom{
+
+    bottom: 0;
+    margin-left: 10%;
+}
+
+.article-categorie.article-title{
+    text-align: center;
+}
+
+.article-content{
+    text-align: justify;
+}
+
+.categorie-titre{
+    margin-left: 10%;
+}
+
+
+
+
+.single-article{
+    margin: 25px;
+}
+
+.acceuil-articles{
+    min-width: 80%;
+    padding: 10% 10%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.acceuil-articles div{
+    margin-bottom: 10%;
+}
+
+.articles-slideshow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 80%;
+}
+
+.article-slideshow{
+
+
+    /* justify-content: space-evenly; */
+    min-width: 95%;
+    flex-wrap: wrap;
+
+}
+
+.voir-article{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: 0;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 10%;
+    text-align: center;
+    font-size: 21px;
+}
+
+.voir-article  a{
+    color: white !important;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+
+
+    padding-top: 15%;
+    font-size: 23px;
+}
+
+.voir-article:hover {
+    background-color: #5b5b5b;
+
+}
+
+.voir-article:hover a{
+    color: black !important;
+}
+
+
+
+.article-full h2 {
+    margin: 0;
+}
+
+.article-full h1{
+    text-align: center;
+}
+
+.article-full .article-content{
+
+    word-wrap: break-word;
+}
+
+.article-preview {
+
+    margin: 31px 21px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+
+.article-show p {
+
+    max-width: 60%;
+    /* margin: 7px; */
+    /* position: absolute; */
+    right: 20%;
+    margin-right: 10%;
+    font-size: 19px;
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+}

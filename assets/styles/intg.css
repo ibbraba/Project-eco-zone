@@ -1,0 +1,16 @@
+#article {
+    text-align: center;
+}
+
+#article * {
+
+    margin-top: 20px;
+}
+
+#article_content{
+    width: 900px;
+    height: 3000px;
+    text-align: start;
+}
+
+

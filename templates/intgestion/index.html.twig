@@ -1,0 +1,90 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IntgestionController!{% endblock %}
+
+{% block body %}
+    {% if is_granted('ROLE_ADMIN') %}
+    {% block header %}
+        <h1>Interface de gestion </h1>
+    {% endblock %}
+
+
+
+    <h2>  Que voulez-vous faire?  </h2>
+
+
+        {% for quote in quotelist %}
+            <div style="background-color:lightblue; margin-top: 200px">
+                <h4>{{ quote.auteur }}</h4>
+                <q>{{ quote.contenu | raw }}</q>
+
+                <button class="btn btn-danger">Supprimer</button>
+            </div>
+        {% endfor %}
+
+    <div>
+        <h3>Crée une nouvelle citation</h3>
+        {{ form(form) }}
+
+    </div>
+
+
+
+
+    <div class="intg-options" style="margin-top: 200px">
+        <button ><a href="{{ path("article_new") }}"> Créer un article </a> </button>
+
+
+     <p>  Gérer les articles </p>
+
+        <h4> {{ list | length }} Articles </h4>
+
+        {% for article in list  %}
+
+            <div class="article-show">
+                <span>{{ article.categorie }}</span>
+                <h3>{{ article.titre }}</h3>
+                <p>{{ article.preview }}</p>
+
+                <button class="voir-article"><a href="{{ path("article_show", {id:article.id} ) }} ">Lire</a></button>
+
+            </div>
+
+            <div class="options">
+                <button ><a href="{{ path("article_edit", {id:article.id} ) }} ">Editer</a></button>
+
+                    {{ include('article/_delete_form.html.twig') }}
+
+
+
+            </div>
+
+
+
+
+
+        {% endfor %}
+
+
+    </div>
+        
+        
+        
+     <div>
+         <a href="{{ path("app_logout") }}">Se déconnecter</a>
+     </div>   
+
+
+    {% else %}
+
+        <span>Vous n'êtes pas identifié</span>
+
+        <a href="{{ path("main") }}">Retour à l'acceuil</a>
+
+    {% endif %}
+
+
+
+{% endblock %}
+
+

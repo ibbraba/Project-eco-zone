@@ -1,0 +1,195 @@
+$primary: darken(#428bca, 20%);
+
+// the ~ allows you to reference things in node_modules
+@import "~bootstrap/scss/bootstrap";
+
+:root {
+    --primary: white;
+    --secondary: black;
+}
+
+
+body {
+    background-color: var(--primary);
+    margin: 0;
+}
+
+.site-title{
+    font-size: 32px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+header *{
+   color: white !important;
+}
+
+h1{
+    margin: 17.5px;
+}
+
+
+.nav-header{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* position: absolute; */
+    /* text-align: center; */
+    margin-top: 13px;
+    WIDTH: 50%;
+    /* margin-left: 15.5%; */
+}
+
+
+
+
+
+
+
+
+header a{
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+header a:visited{
+    color: white;
+}
+
+.acceuil-field, .categorie-container {
+
+    min-height: 400px;
+
+}
+
+.pub{
+    height: 200px;
+    color: white;
+    font-size: 24px;
+    background-color: #5b5b5b;
+    opacity: 0.8;
+
+}
+
+.acceuil-articles h2 {
+    padding-bottom: 10px;
+}
+
+
+
+footer {
+    text-align: center;
+    height: 125px;
+    background-color: #164ed3;
+    opacity: 0.85;
+    border: 1px solid;
+    padding-top: 20px;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+}
+
+.pub-right{
+    position: absolute;
+    right: 2%;
+}
+
+.lire-article{
+    background-color: #123994;
+    color: white;
+}
+
+
+.pub-top{
+
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+
+.pub-bottom{
+    width: 50%;
+    text-align: center;
+    margin: 2% 25%;
+}
+
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.acceuil-articles h2 {
+    text-align: center;
+}
+
+
+/* CAROUSEL INDEX */
+
+.carousel-item{
+    max-height: 660px;
+}
+
+.carousel-caption{
+    bottom: 5%;
+    background-color: #808080d1;
+    border-radius: 44px 10px;
+    padding: 20px;
+}
+
+.item-header{
+    width: auto;
+    text-align: center;
+   margin: 5px;
+    border-radius: 0;
+}
+
+
+
+
+.item-header:hover a{
+
+    border-bottom:3px solid white;
+    padding-bottom:8px;
+}
+
+
+.main-article{
+    padding: 10% 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: #164ED3;
+}
+
+.main-article-text{
+    width: 60%;
+}
+
+.main-image{
+    width: 30%;
+
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+.latest-articles, .top-articles{
+    display: flex;
+    flex-direction: row;
+}
+
+.article-image {
+    max-height: 550px;
+    height: auto;
+    object-fit: cover;
+}

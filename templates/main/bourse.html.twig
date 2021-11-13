@@ -1,0 +1,101 @@
+{% extends 'base.html.twig' %}
+
+
+{% block content %}
+    <h2 class="categorie-titre">Articles sur la bourse</h2>
+
+
+
+    <div class="categorie-container">
+
+        <div class="main-article">
+            <div class="main-article-text">
+
+                <h4>{{ toparticle.titre }}</h4>
+
+                <p> {{ toparticle.preview }} </p>
+
+                <a class="btn btn-primary" href="{{ path('article_show', {id: toparticle.id} ) }}">Lire l'article </a>
+
+            </div>
+
+            <div class="main-image">
+                <img src="{{ asset('build/images/' ~ toparticle.imgbg) }}" alt="">
+            </div>
+
+        </div>
+
+
+
+        <div class="acceuil-articles">
+            {% for article in list %}
+                {% if article.id != toparticle.id %}
+                {% if loop.index is divisible by(2) %}
+
+
+
+
+
+                    <div class="top-articles">
+
+
+
+                        <div class="main-article-text">
+
+                            <h4>{{ article.titre }}</h4>
+
+                            <p> {{ article.preview }} </p>
+
+                            <a class="btn lire-article" href="{{ path('article_show', {id: article.id} ) }}">Lire l'article </a>
+
+                        </div>
+
+
+                        <div class="main-image">
+                            <img src="{{ asset('build/images/' ~ article.imgbg) }}" alt="">
+                        </div>
+
+
+                    </div>
+
+
+                {% else %}
+
+                    <div class="top-articles">
+                        <div class="main-image">
+                            <img src="{{ asset('build/images/' ~ article.imgbg) }}" alt="">
+                        </div>
+
+
+                        <div class="main-article-text">
+
+                            <h4>{{ article.titre }}</h4>
+
+                            <p> {{ article.preview }} </p>
+
+                            <a class="btn lire-article" href="{{ path('article_show', {id: article.id} ) }}">Lire l'article </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                {% endif %}
+            {% endif %}
+            {% endfor %}
+
+
+        </div>
+
+        <div class="pub pub-right"> AD n°2</div>
+
+
+    </div>
+
+
+
+
+
+
+{% endblock %}
