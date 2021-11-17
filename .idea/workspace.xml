@@ -2,34 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1c5304d-77a7-4138-a00a-4205861ad2d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/coverbook.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/dollar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/eco.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/f1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logosmall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/oneup.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/voiture.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/article.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/intg.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20211113115825.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Quote.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/QuoteType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/QuoteTypeTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/QuoteRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main/actu.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main/bourse.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main/eco.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main/livres.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main/societe.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/AppTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ezone" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ArticleSearchType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/article.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/article.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/actu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/actu.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/bourse.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/bourse.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/eco.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/eco.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/societe.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/societe.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +26,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/ezone" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
@@ -185,7 +175,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1y5Ah6df7hXjwUZ0Y71jvR3Cb6b" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -240,7 +230,8 @@
       <workItem from="1633518172920" duration="43000" />
       <workItem from="1634312945096" duration="77000" />
       <workItem from="1635512586678" duration="3444000" />
-      <workItem from="1636387753676" duration="32585000" />
+      <workItem from="1636387753676" duration="34893000" />
+      <workItem from="1636921257420" duration="14484000" />
     </task>
     <servers />
   </component>
@@ -255,6 +246,13 @@
             <State>
               <option name="FILTERS">
                 <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
                   <entry key="text">
                     <value>
                       <list>

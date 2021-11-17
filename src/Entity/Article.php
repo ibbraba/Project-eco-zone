@@ -53,6 +53,16 @@ class Article
      */
     private $imgbg;
 
+    /**
+     * @ORM\Column(type="string", length=900, nullable=true)
+     */
+    private $altimage;
+
+    /**
+     * @ORM\Column(type="string", length=900, nullable=true)
+     */
+    private $meta;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -144,6 +154,30 @@ class Article
     public function setImgbg(?string $imgbg): self
     {
         $this->imgbg = $imgbg;
+
+        return $this;
+    }
+
+    public function getAltimage(): ?string
+    {
+        return $this->altimage;
+    }
+
+    public function setAltimage(?string $altimage): self
+    {
+        $this->altimage = $altimage;
+
+        return $this;
+    }
+
+    public function getMeta(): ?string
+    {
+        return $this->meta;
+    }
+
+    public function setMeta(?string $meta): self
+    {
+        $this->meta = $meta;
 
         return $this;
     }

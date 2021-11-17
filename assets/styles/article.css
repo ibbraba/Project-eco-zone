@@ -1,6 +1,4 @@
-/* TODO Design single article page */
 
-/* TODO Design Category Page (Trending article + Litle Article) */
 
 .article-show {
     width: 45%;
@@ -39,7 +37,9 @@
 .article-bottom{
 
     bottom: 0;
-    margin-left: 10%;
+    /* margin-left: 10%; */
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .article-categorie.article-title{
@@ -51,7 +51,12 @@
 }
 
 .categorie-titre{
-    margin-left: 10%;
+    background-color: #164ED3;
+    margin: 0;
+    padding: 2% 10%;
+    color: white;
+
+
 }
 
 
@@ -88,7 +93,7 @@
 
 }
 
-.voir-article{
+/*.voir-article{
     position: absolute;
     right: 0;
     height: 100%;
@@ -99,7 +104,7 @@
     width: 10%;
     text-align: center;
     font-size: 21px;
-}
+}*/
 
 .voir-article  a{
     color: white !important;
@@ -134,6 +139,7 @@
 .article-full .article-content{
 
     word-wrap: break-word;
+    justify-content: space-between;
 }
 
 .article-preview {

@@ -47,20 +47,22 @@ class MainController extends AbstractController
     public function actu(): Response
     {
 
-        //TODO Make sure the trending article is not part of the list of articles
+
 
 
         $category = "Actualités";
         $article = $this->getDoctrine()->getRepository(Article::class);
         $list = $article->findAllbyCategory($category);
         $topArticle = $article->findOneBy(array('categorie' => $category), array("views" => "DESC"));
-
+        $route="actualites";
 
 
         return $this->render('main/actu.html.twig', [
             'controller_name' => 'MainController',
             'list'=> $list,
             'toparticle' => $topArticle,
+            'route' => $route,
+            "categorie" => $category
         ]);
     }
 
@@ -74,14 +76,15 @@ class MainController extends AbstractController
         $article = $this->getDoctrine()->getRepository(Article::class);
         $list = $article->findAllbyCategory($category);
 
-        //TODO Retrieve the most view article from each category to the top of the page with blue BG
         $topArticle = $article->findOneBy(array('categorie' => $category), array("views" => "DESC"));
-
+        $route="bourse";
 
         return $this->render('main/bourse.html.twig', [
             'controller_name' => 'MainController',
             'toparticle' => $topArticle,
-            'list'=> $list
+            'list'=> $list,
+            "route"=> $route,
+            "categorie" => $category
         ]);
     }
 
@@ -96,12 +99,14 @@ class MainController extends AbstractController
         $article = $this->getDoctrine()->getRepository(Article::class);
         $list = $article->findAllbyCategory($category);
         $topArticle = $article->findOneBy(array('categorie' => $category), array("views" => "DESC"));
-
+        $route="eco";
 
         return $this->render('main/eco.html.twig', [
             'controller_name' => 'MainController',
             'list'=> $list,
             'toparticle' => $topArticle,
+            "route"=> $route,
+            "categorie" => $category
         ]);
     }
 
@@ -111,6 +116,7 @@ class MainController extends AbstractController
     public function societe(): Response
     {
 
+        $route="societe";
         $category = "Entreprises";
         $article = $this->getDoctrine()->getRepository(Article::class);
         $list = $article->findAllbyCategory($category);
@@ -121,6 +127,8 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
             'list'=> $list,
             'toparticle' => $topArticle,
+            "route"=> $route,
+            "categorie" => $category
         ]);
     }
 
@@ -136,12 +144,14 @@ class MainController extends AbstractController
         $article = $this->getDoctrine()->getRepository(Article::class);
         $list = $article->findAllbyCategory($category);
         $topArticle = $article->findOneBy(array('categorie' => $category), array("views" => "DESC"));
-
+        $route="livres";
 
         return $this->render('main/livres.html.twig', [
             'controller_name' => 'MainController',
             'list'=> $list,
             'toparticle' => $topArticle,
+            "route"=> $route,
+            "categorie" => $category
         ]);
     }
 
