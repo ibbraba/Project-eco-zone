@@ -15,11 +15,12 @@ class MainController extends AbstractController
 {
     /**
      * @Route("/", name="main")
+     * TODO Write legl mentions for footer
      */
     public function index(ArticleRepository $articleRepository, QuoteRepository $quoteRepository): Response
     {
 
-        //$newarticles = $articleRepository->findOneBy(array('date'=> 'ASC'));
+       // $newarticles = $articleRepository->findOneBy(null ,array('date'=> 'DESC'));
 
 
         //TODO Change method to findOneBy and disable loop in twig

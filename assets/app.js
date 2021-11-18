@@ -12,6 +12,7 @@ require('bootstrap');
 import './styles/app.scss';
 import './styles/intg.css';
 import './styles/article.css'
+import './styles/responsive.css'
 
 
 // start the Stimulus application

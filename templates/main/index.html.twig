@@ -32,10 +32,7 @@
 
 
 
-            <blockquote class="blockquote text-center">
-                <p class="mb-0">{{ quote.contenu | raw }}</p>
-                <p class="blockquote-footer">{{ quote.auteur }} </p>
-            </blockquote>
+
 
 
             {% for article in newarticles %}
@@ -61,6 +58,14 @@
 
 
             </div>
+                {% if loop.index == 1 %}
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">{{ quote.contenu | raw }}</p>
+                        <p class="blockquote-footer">{{ quote.auteur }} </p>
+                    </blockquote>
+
+                {% endif %}
+
             {% endif %}
             {% endfor %}
 
