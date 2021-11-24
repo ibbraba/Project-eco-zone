@@ -23,7 +23,7 @@ class MainController extends AbstractController
        // $newarticles = $articleRepository->findOneBy(null ,array('date'=> 'DESC'));
 
 
-        //TODO Change method to findOneBy and disable loop in twig
+
         $lastBookReview = $articleRepository->findOneBy(array('categorie'=>'livres'), array('date'=> 'DESC'));
         $newarticles = $articleRepository->findNewArticles();
 

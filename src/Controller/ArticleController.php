@@ -65,7 +65,7 @@ class ArticleController extends AbstractController
 
         $entitymanger->persist($article);
         $entitymanger->flush();
-
+        $route = $article->getCategorie();
 
         $articlefull = $article->getContent();
 
@@ -76,6 +76,8 @@ class ArticleController extends AbstractController
         return $this->render('article/show.html.twig', [
             'article' => $article,
             'articlefull' => $articlefull,
+            'route' => $route
+
         ]);
     }
 

@@ -2,6 +2,9 @@
 
 {% block title %}Article{% endblock %}
 
+
+{# TODO Find right article spacement, police size and line height (see other site) (mobile version included #}
+
 {% block content %}
    {# <h1>Article</h1>
 
@@ -61,6 +64,7 @@
     <div class="article-bottom">
 
         <a class="btn btn-primary" href="{{ path('main') }}">Retour à l'acceuil</a>
+        <a class="btn btn-primary" href="{{ route }}"> Retour à {{ article.categorie }}</a>
 {#        TODO: Create back to category button #}
 
 

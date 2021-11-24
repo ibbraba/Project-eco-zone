@@ -1,0 +1,5 @@
+AppBundle\Entity\Article:
+  article:
+  titre: Titre de l'article
+  Content : Article content
+  preview: Article preview
