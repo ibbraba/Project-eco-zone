@@ -1,0 +1,14 @@
+App\Entity\Article:
+  article{1..10}:
+    titre: 'test titre'
+    content : 'test content'
+    categorie: "eco"
+    date: <dateTime()>
+
+
+App\Entity\Quote:
+  quote:
+    titre: <title()>
+    contenu: <realText()>
+
+

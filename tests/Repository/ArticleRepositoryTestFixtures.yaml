@@ -1,4 +1,0 @@
-App\Entity\Article:
-  article{1..10}:
-    titre: test titre
-    content : test content

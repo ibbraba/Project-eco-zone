@@ -2,6 +2,27 @@
 
 {% block content %}
 
+    {% if  not mainarticle and not book and  not quote and not newarticles %}
+    {# Error Message if no article in Db #}
+
+        <div class="main-article">
+            <div class="main-article-text" style="color: white">
+
+                <h4>OOPS ! Pas d'articles disponible :( </h4>
+                <p>Nous travaillons sur le site, nous esperons nous revoir bientôt !  </p>
+
+
+
+            </div>
+
+
+
+        </div>
+
+    {% else %}
+
+
+
     <div class="acceuil-field">
 
 
@@ -59,17 +80,20 @@
 
             </div>
                 {% if loop.index == 1 %}
+                    {% if quote %}
                     <blockquote class="blockquote text-center">
                         <p class="mb-0">{{ quote.contenu | raw }}</p>
                         <p class="blockquote-footer">{{ quote.auteur }} </p>
                     </blockquote>
-
+                    {% endif %}
                 {% endif %}
 
             {% endif %}
             {% endfor %}
 
 
+
+         {% if book %}
          <div class="main-book-review">
              <h4>Notre derniere Review</h4>
 
@@ -94,7 +118,7 @@
 
              </div>
          </div>
-
+         {% endif%}
 
     </div>
 
@@ -102,6 +126,7 @@
 
 </div>
 
+   {% endif%}
 {% endblock %}
 
 

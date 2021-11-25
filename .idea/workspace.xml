@@ -2,28 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1c5304d-77a7-4138-a00a-4205861ad2d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/test/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Ressources/fixtures/article.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/TestFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ArticleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Controller/MainControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Repository/ArticleRepositoryTestFixtures.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ecoproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecoproject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Controller/IndexNoBookReview.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Controller/IndexNoQuoteTest.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/test/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/test/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Quote.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Quote.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/AppTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Controller/MainControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/MainControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Repository/ArticleRepositoryTestFixtures.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,6 +197,7 @@
       <recent name="C:\wamp64\www\ecoproject\public\build\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\ecoproject\tests\Controller" />
       <recent name="C:\wamp64\www\ecoproject\assets\images" />
     </key>
   </component>
@@ -256,7 +243,7 @@
       <workItem from="1636921257420" duration="23858000" />
       <workItem from="1637339902724" duration="1680000" />
       <workItem from="1637343376909" duration="1470000" />
-      <workItem from="1637664861510" duration="30022000" />
+      <workItem from="1637664861510" duration="35225000" />
     </task>
     <servers />
   </component>

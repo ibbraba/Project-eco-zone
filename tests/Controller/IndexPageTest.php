@@ -17,8 +17,10 @@ use Liip\TestFixturesBundle\Services\DatabaseTools\AbstractDatabaseTool;
 use Liip\TestFixturesBundle\Services\DatabaseToolCollection;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-
-class MainControllerTest extends WebTestCase
+/*
+ * Here we test if the Maincontroller function are OK
+ */
+class IndexPageTest extends WebTestCase
 {
 
 
@@ -58,6 +60,33 @@ class MainControllerTest extends WebTestCase
 
         $crawler = $this->testClient->request('GET', "/");
         $this->assertResponseStatusCodeSame(200);
+    }
+
+    //Test if no quote on main page
+    // The page should still be loaded (Twig error by default)
+    public function test_error_if_no_quote(){
+
+        $this->databaseTool->loadAliceFixture([__DIR__ . '/IndexNoQuoteTest.yaml']);
+        $crawler = $this->testClient->request('GET', "/");
+        $this->assertResponseStatusCodeSame(200);
+
+    }
+
+    public function test_index_without_book_review(){
+        $this->databaseTool->loadAliceFixture([__DIR__ . '/IndexNoBookReview.yaml']);
+        $crawler = $this->testClient->request('GET', "/");
+        $this->assertResponseStatusCodeSame(200);
+
+    }
+
+    public function test_index_if_no_articles(){
+       // $this ->expectError();
+
+
+        $this->databaseTool->loadFixtures();
+        $crawler = $this->testClient->request('GET', "/");
+        $this->assertResponseStatusCodeSame(200);
+
     }
 
 

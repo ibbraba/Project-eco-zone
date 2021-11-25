@@ -14,6 +14,7 @@ class Article
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * TODO Refactor entity proprertys names
      * TODO Add Meta description to all articles (nullable) + alt description for related image
      */
     private $id;
