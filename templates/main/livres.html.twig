@@ -3,6 +3,21 @@
 
 {% block content %}
 
+    {# Early return: no article found #}
+    {% if not toparticle and not list %}
+
+    <div class="main-article">
+    <div class="main-article-text">
+
+    <h4>Work in progress</h4>
+
+    <p class="no-article-category"> Aucun article trouvé dans cette catégorie </p>
+
+    <a href="{{ path('main') }}"> Retour à l'acceuil </a>
+
+    {% else %}
+
+
     <h2 class="categorie-titre">Derniers ouvrages étudiés</h2>
 
     <div class="categorie-container">
@@ -88,5 +103,5 @@
     <div class="pub pub-right"> AD n°2</div>
 
     </div>
-
+{% endif %}
 {% endblock %}

@@ -47,10 +47,6 @@ class MainController extends AbstractController
      */
     public function actu(): Response
     {
-
-
-
-
         $category = "Actualités";
         $article = $this->getDoctrine()->getRepository(Article::class);
         $list = $article->findAllbyCategory($category);
@@ -76,7 +72,6 @@ class MainController extends AbstractController
         $category = "Bourse";
         $article = $this->getDoctrine()->getRepository(Article::class);
         $list = $article->findAllbyCategory($category);
-
         $topArticle = $article->findOneBy(array('categorie' => $category), array("views" => "DESC"));
         $route="bourse";
 
@@ -122,7 +117,6 @@ class MainController extends AbstractController
         $article = $this->getDoctrine()->getRepository(Article::class);
         $list = $article->findAllbyCategory($category);
         $topArticle = $article->findOneBy(array('categorie' => $category), array("views" => "DESC"));
-
 
         return $this->render('main/societe.html.twig', [
             'controller_name' => 'MainController',
