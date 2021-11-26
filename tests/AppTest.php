@@ -8,6 +8,9 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use App\Entity\Article;
 
+/*
+ * TODO compteur vues
+ */
 class AppTest extends WebTestCase {
 
     protected Article $article;
