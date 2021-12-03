@@ -1,2 +1,30 @@
 App\Entity\Article:
-  titre.
+  article{1..10}:
+    titre: 'title<current()>'
+    content : 'test content'
+    categorie: "eco"
+    date: <dateTime()>
+
+  article11:
+    titre: 'title11'
+    content: 'cheeck'
+    categorie: 'livres'
+    date: <dateTime()>
+
+  article12:
+    titre: 'title12'
+    content: 'voilaa'
+    categorie: "Actualites"
+    date: <dateTime()>
+
+  article13:
+    titre: 'title13'
+    content: 'voilaa'
+    categorie: "Bourse"
+    date: <dateTime()>
+
+  article14:
+    titre: 'title14'
+    content: 'retente'
+    categorie: "Entreprise"
+    date: <dateTime()>

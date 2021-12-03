@@ -4,9 +4,15 @@ namespace App\Entity;
 
 use App\Repository\ArticleRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=ArticleRepository::class)
+ * @UniqueEntity("titre")
+ * TODO Refactor entity proprertys names
+ * TODO Add Meta description to all articles (nullable) + alt description for related image
  */
 class Article
 {
@@ -14,18 +20,18 @@ class Article
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
-     * TODO Refactor entity proprertys names
-     * TODO Add Meta description to all articles (nullable) + alt description for related image
+     *
      */
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, unique=true)
      */
     private $titre;
 
     /**
-     * @ORM\Column(type="text", length=22000)
+     * @ORM\Column(type="text", length=22000,  )
+     *
      */
     private $content;
 

@@ -1,11 +1,11 @@
 App\Entity\Article:
     article{1..10}:
-        titre: 'test titre'
+        titre: 'title<current()>'
         content : 'test content'
         categorie: "eco"
         date: <dateTime()>
     article11:
-         titre: 'test titre'
+         titre: 'title11'
          content: 'voilaa'
          categorie: "livres"
          date: <dateTime()>

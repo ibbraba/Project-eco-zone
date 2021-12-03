@@ -2,19 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1c5304d-77a7-4138-a00a-4205861ad2d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception/error404.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/IntgControllerTest/UserFixturesTest.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/UserTestFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/ArticleForm/AdminUserFixturesTest.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/ArticleForm/ArticleFormTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/ArticleForm/ArticleFormTest.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/actu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/actu.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/bourse.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/bourse.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/eco.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/eco.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/livres.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/livres.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/societe.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/societe.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/AppTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/IntgestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IntgestionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/TestFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/TestFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ArticleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ArticleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Controller/CategoryPageTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/CategoryPageTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Controller/IndexNoBookReview.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/IndexNoBookReview.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Controller/IndexNoQuoteTest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/IndexNoQuoteTest.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Controller/IndexPageTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/IndexPageTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Controller/categoryPageTest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/categoryPageTest.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/IntgControllerTest/IntgControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/IntgControllerTest/IntgControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/IntgControllerTest/UserFixturesTest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/IntgControllerTest/UserFixturesTest.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +39,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration">
@@ -191,13 +199,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/ArticleForm" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\ecoproject\tests\ArticleForm" />
       <recent name="C:\wamp64\www\ecoproject\assets\images" />
       <recent name="C:\wamp64\www\ecoproject\public\build\images" />
     </key>
@@ -248,7 +257,8 @@
       <workItem from="1636921257420" duration="23858000" />
       <workItem from="1637339902724" duration="1680000" />
       <workItem from="1637343376909" duration="1470000" />
-      <workItem from="1637664861510" duration="48801000" />
+      <workItem from="1637664861510" duration="50837000" />
+      <workItem from="1638185447490" duration="38408000" />
     </task>
     <servers />
   </component>

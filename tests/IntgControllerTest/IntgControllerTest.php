@@ -9,19 +9,21 @@ use Doctrine\ORM\EntityManager;
 use Doctrine\Persistence\ObjectManager;
 use http\Client\Request;
 use http\Client\Response;
+use Liip\TestFixturesBundle\LiipTestFixturesBundle;
 use Liip\TestFixturesBundle\Services\DatabaseTools;
-
 use Liip\TestFixturesBundle\Services\DatabaseTools\AbstractDatabaseTool;
 use Liip\TestFixturesBundle\Services\DatabaseToolCollection;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-
+/*
+ * Here we test all the functions related to the UserController to give sure access to the adminInterface.
+ *
+ */
 class IntgControllerTest extends WebTestCase
 {
     /**
      *
-     * TODO Acces if ROLE_ADMIN
-     * TODO  No acces if not ROLE_ADMIN
+     * TODO File test for ArticleForm
      * @var AbstractDatabaseTool
      */
     protected $databaseTool
@@ -33,8 +35,15 @@ class IntgControllerTest extends WebTestCase
     public function setUp(): void
     {
          $this->testClient = static::createClient();
-        $this->databaseTool = $this->testClient->getContainer()
+       $this->databaseTool = $this->testClient->getContainer()
             ->get(DatabaseToolCollection::class)->get();
+   //     $this->testClient->getContainer()->get(DatabaseToolCollection::class)->get();
+
+        parent::setUp();
+
+       // self::bootKernel();
+
+       // $this->databaseTool = static::getContainer()->get(DatabaseTools\ORMDatabaseTool::class)->get();
     }
 
 
@@ -50,23 +59,26 @@ class IntgControllerTest extends WebTestCase
     /*
      * Acces authorized if logged in
      */
-    public function test_backend_with_good_credentials(){
+    public function test_intg_with_good_credentials(){
         $this->databaseTool->loadAliceFixture([__DIR__.'/UserFixturesTest.yaml']);
         $crawler = $this->testClient->request("GET", "/ezone/login");
-        $crawler->selectButton("Se connecter")->form([
+        $form= $crawler->selectButton("Se connecter")->form([
             "username"=> "user1",
             "password"=> "00000"
         ]);
+        $this->testClient->submit($form);
 
-        $this->assertResponseStatusCodeSame(200);
-      //  $this->assertResponseRedirects('intgestion');
+
+        $this->testClient->followRedirect();
+
+        $this->assertSelectorExists("h1", "Interface de gestion");
 
     }
 
     /*
      * Acces unauthorized with bad credentials
      */
-    public function test_backend_access_unauthorized_with_bad_credentials()
+    public function test_intg_access_unauthorized_with_bad_credentials()
     {
 
 
@@ -105,6 +117,18 @@ class IntgControllerTest extends WebTestCase
 
 
     //TODO Article created deleted, and edited flash (create var=true in controller and render)
+
+    /*
+     * TODO In File ArticleFormTest
+     */
+//    public function test_flash_success_on_article(){}
+
+
+
+
+    /*
+     * TODO In File ArticleFormTest
+     */
     //TODO Make sure an article is created or deleted by counting number of articles
 
 

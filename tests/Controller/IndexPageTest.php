@@ -41,7 +41,7 @@ class IndexPageTest extends WebTestCase
         $this->databaseTool = $this->testClient->getContainer()
             ->get(DatabaseToolCollection::class)->get();
 
-
+    //    $this->testClient->getContainer()->get(DatabaseToolCollection::class)->get();
 
     }
 
@@ -56,6 +56,8 @@ class IndexPageTest extends WebTestCase
 
         $this->databaseTool->loadFixtures(["App\DataFixtures\TestFixtures"]);
 //        $this->assertEquals(null, $this->databaseTool);
+
+
 
 
         $crawler = $this->testClient->request('GET', "/");

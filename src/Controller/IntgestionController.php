@@ -35,17 +35,15 @@ class IntgestionController extends AbstractController
      * @Route("/", name="intgestion")
      */
 
-    public function index(ArticleRepository $article,QuoteRepository $quoteRepository,Request $request,PaginatorInterface $paginator): Response
+    public function index(ArticleRepository $article, QuoteRepository $quoteRepository, Request $request, PaginatorInterface $paginator): Response
     {
 
         // TODO Use bundle for pagination of articles
         $quoteList = $quoteRepository->findAll();
         $list = $article->findAll();
-        $quote= new Quote();
+        $quote = new Quote();
         $form = $this->createForm(QuoteType::class, $quote);
         $form->handleRequest($request);
-
-
 
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -58,10 +56,9 @@ class IntgestionController extends AbstractController
         }
 
 
-
-       /* if (!$list){
-            throw $this->createNotFoundException("Pas d'articles.");
-        }*/
+        /* if (!$list){
+             throw $this->createNotFoundException("Pas d'articles.");
+         }*/
 
 
         return $this->render('intgestion/index.html.twig', [
@@ -82,6 +79,7 @@ class IntgestionController extends AbstractController
         $form->handleRequest($request);
         $article->setDate(new \DateTime());
         if ($form->isSubmitted() && $form->isValid()) {
+            dd($article);
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($article);
             $entityManager->flush();
@@ -117,15 +115,13 @@ class IntgestionController extends AbstractController
     }
 
 
-
-
     /**
      * @Route("/{id}/delete", name="article_delete", methods={"POST"})
      */
     public function delete(Request $request, Article $article): Response
     {
 
-        if ($this->isCsrfTokenValid('delete'.$article->getId(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $article->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($article);
             $entityManager->flush();
@@ -133,8 +129,5 @@ class IntgestionController extends AbstractController
 
         return $this->redirectToRoute('intgestion', [], Response::HTTP_SEE_OTHER);
     }
-
-
-
 
 }

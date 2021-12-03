@@ -1,0 +1,6 @@
+App\Entity\Article:
+  article{1..10}:
+    titre: <title()>
+    content : 'test content'
+    categorie: "eco"
+    date: <dateTime()>

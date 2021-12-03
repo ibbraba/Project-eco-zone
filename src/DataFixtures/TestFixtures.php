@@ -4,11 +4,15 @@ namespace App\DataFixtures;
 
 use App\Entity\Article;
 use App\Entity\Quote;
+use App\Entity\User;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
+use Symfony\Component\PasswordHasher;
 
 class TestFixtures extends Fixture
 {
+
+
     public function load(ObjectManager $manager)
     {
         for ($i=0; $i<10; $i++) {
@@ -28,6 +32,13 @@ class TestFixtures extends Fixture
 
             $manager->persist($article);
         }
+
+
+
+
+
+
+
 
         $quote = new Quote();
         $quote->setTitre("Titre")

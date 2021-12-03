@@ -5,14 +5,28 @@ namespace App\Tests;
 
 
 use Doctrine\Common\Cache\Psr6\InvalidArgument;
+use Liip\TestFixturesBundle\Services\DatabaseToolCollection;
+use Liip\TestFixturesBundle\Services\DatabaseTools\AbstractDatabaseTool;
 use MongoDB\BSON\Timestamp;
 use Monolog\DateTimeImmutable;
 use PHPUnit\Framework\TestCase;
 use App\Entity\Article;
 use Symfony\Component\Validator\Constraints\DateTime;
 
+
+/*
+ * Here we test the validity constraint linked to our Article Entity
+ */
 class ArticleTest extends TestCase
 {
+    /**
+     *
+     * TODO File test for ArticleForm
+     * @var AbstractDatabaseTool
+     */
+    protected $databaseTool
+    ;
+
     private Article $article;
 
     protected function setUp(): void
@@ -103,6 +117,13 @@ class ArticleTest extends TestCase
 
     }
 
+
+
+
+
+
+
+    // Test no article out of the 5 categories
 
     //Test if  datetime publication is today's date (timezone bdd constraints)
 /*
