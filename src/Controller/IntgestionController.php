@@ -71,18 +71,23 @@ class IntgestionController extends AbstractController
 
     /**
      * @Route("/new", name="article_new", methods={"GET","POST"})
+     * @param Request $request
+
+     * @return Response
      */
     public function new(Request $request): Response
     {
         $article = new Article();
+
         $form = $this->createForm(ArticleType::class, $article);
         $form->handleRequest($request);
         $article->setDate(new \DateTime());
         if ($form->isSubmitted() && $form->isValid()) {
-            dd($article);
+
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($article);
             $entityManager->flush();
+            $this->addFlash("success", "Votre article a bien été enregistré !");
 
             return $this->redirectToRoute('intgestion', [], Response::HTTP_SEE_OTHER);
         }
@@ -104,6 +109,7 @@ class IntgestionController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
+            $this->addFlash("success", "Votre article a bien été modifié ! ");
 
             return $this->redirectToRoute('intgestion', [], Response::HTTP_SEE_OTHER);
         }
@@ -125,6 +131,7 @@ class IntgestionController extends AbstractController
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($article);
             $entityManager->flush();
+            $this->addFlash("success", "Votre article a bien été supprimé ! ");
         }
 
         return $this->redirectToRoute('intgestion', [], Response::HTTP_SEE_OTHER);

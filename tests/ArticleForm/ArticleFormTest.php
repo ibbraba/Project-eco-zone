@@ -4,6 +4,7 @@
 namespace App\Tests\ArticleForm;
 
 
+use App\Repository\ArticleRepository;
 use App\Repository\UserRepository;
 use Faker\Provider\DateTime;
 use http\Client\Response;
@@ -36,7 +37,11 @@ class ArticleFormTest extends WebTestCase
 
         $userRepository = static::getContainer()->get(UserRepository::class);
 
+        $this->databaseTool = $this->testClient->getContainer()
+            ->get(DatabaseToolCollection::class)->get();
+        $this->databaseTool->loadAliceFixture([__DIR__."/AdminUserFixturesTest.yaml"]);
         // retrieve the test user
+
         $testUser = $userRepository->findOneBy([
             "username" => "user1"
         ]);
@@ -58,22 +63,50 @@ class ArticleFormTest extends WebTestCase
     }
 
 
-/*    public function test_unique_article_title(){
-        $client = $this->testClient->request('GET', '/intgestion/new');
-       $crawler = $this->testClient->submitForm("Save",
-           [
+   public function test_flush_new_article(){
+        $crawler = $this->testClient->request('GET', '/intgestion/new');
+        $form = $crawler->selectButton("Save")->form([
             "article[titre]" => "test titre",
             "article[content]" => "test contenu",
             "article[preview]" => "test preview",
             "article[imgbg]" => "phototest.jpg"]);
 
+       $this->testClient->submit($form);
+       $this->testClient->followRedirect();
+       $this->assertSelectorTextContains("div", "Votre article a bien été enregistré !");
+    }
 
-     //  $this->testClient->followRedirect();
-       // $this->assertResponseStatusCodeSame(200);
-       // $this->assertSelectorTextContains("div", "Votre article a bien été enregistré !");
-    }*/
+    public function test_success_edit_article(){
+
+        $this->databaseTool->loadAliceFixture([__DIR__."/ArticleFormTest.yaml"], true);
+      $crawler =  $this->testClient->request("GET", "/intgestion/1/edit");
+        $this->assertResponseStatusCodeSame(200);
+       $form= $crawler->selectButton("Update")->form([
+           'article[titre]' => 'edit titre'
+       ]);
+
+       $this->testClient->submit($form);
+       $this->testClient->followRedirect();
+      // $this->assertSelectorTextContains("div", "Votre Article a bien été modifié ! ")
+       ;
 
 
+
+    }
+
+
+   //TODO test success delete article
+    public function test_success_delete_article(){
+        $this->databaseTool->loadAliceFixture([__DIR__."/ArticleFormTest.yaml"], true);
+        $crawler =  $this->testClient->request("GET", "/intgestion");
+
+        $form = $crawler->filter('form[name=delete1]')->form();
+        $this->testClient->submit($form);
+        $this->testClient->followRedirect();
+        $this->assertResponseStatusCodeSame(200);
+         $this->assertSelectorTextContains("div", "Votre Article a bien été supprimé ! ")
+        ;
+    }
 
 
 

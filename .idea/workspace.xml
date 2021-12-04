@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1c5304d-77a7-4138-a00a-4205861ad2d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/UserTestFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ArticleForm/AdminUserFixturesTest.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ArticleForm/ArticleFormTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ArticleForm/ArticleFormTest.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/IntgestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IntgestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/TestFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/TestFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ArticleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ArticleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Controller/CategoryPageTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/CategoryPageTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Controller/IndexNoBookReview.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/IndexNoBookReview.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Controller/IndexNoQuoteTest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/IndexNoQuoteTest.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Controller/IndexPageTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/IndexPageTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Controller/categoryPageTest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/categoryPageTest.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/IntgControllerTest/IntgControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/IntgControllerTest/IntgControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/IntgControllerTest/UserFixturesTest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/IntgControllerTest/UserFixturesTest.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/intgestion/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/intgestion/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ArticleForm/ArticleFormTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ArticleForm/ArticleFormTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ArticleForm/ArticleFormTest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ArticleForm/ArticleFormTest.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +244,7 @@
       <workItem from="1637339902724" duration="1680000" />
       <workItem from="1637343376909" duration="1470000" />
       <workItem from="1637664861510" duration="50837000" />
-      <workItem from="1638185447490" duration="38408000" />
+      <workItem from="1638185447490" duration="50197000" />
     </task>
     <servers />
   </component>
