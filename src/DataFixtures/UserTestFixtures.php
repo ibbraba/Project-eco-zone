@@ -32,7 +32,7 @@ class UserTestFixtures extends Fixture
         $manager->persist($user);
         $manager->flush();
 
-        // TODO: Implement load() method.
+
     }
 
 

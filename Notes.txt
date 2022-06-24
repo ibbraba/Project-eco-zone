@@ -1,10 +1,2 @@
 Idées de test:
 
-
-TODO-test BackEnd Controller
-
-
-
-
-TODO-Role ADMIN
-TODO-email id

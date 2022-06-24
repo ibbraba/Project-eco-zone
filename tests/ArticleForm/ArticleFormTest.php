@@ -22,8 +22,7 @@ class ArticleFormTest extends WebTestCase
 {
 
     /**
-     *TODO Test unique title -> to put in file ArticleForm
-     * TODO File test for ArticleForm
+     *
      * @var AbstractDatabaseTool
      */
     protected $databaseTool
@@ -99,11 +98,14 @@ class ArticleFormTest extends WebTestCase
     public function test_success_delete_article(){
         $this->databaseTool->loadAliceFixture([__DIR__."/ArticleFormTest.yaml"], true);
         $crawler =  $this->testClient->request("GET", "/intgestion");
+        $this->assertResponseStatusCodeSame(200);
+
+
 
         $form = $crawler->filter('form[name=delete1]')->form();
         $this->testClient->submit($form);
         $this->testClient->followRedirect();
-        $this->assertResponseStatusCodeSame(200);
+        //$this->assertResponseStatusCodeSame(200);
          $this->assertSelectorTextContains("div", "Votre Article a bien été supprimé ! ")
         ;
     }

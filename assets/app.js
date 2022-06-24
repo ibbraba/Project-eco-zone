@@ -19,14 +19,3 @@ import './styles/responsive.css'
 import './bootstrap';
 
 
-
-document.addEventListener("DOMContentLoaded", function (){
-
-    console.log("ok")
-
-    const div = document.getElementById("selector-slide");
-    const displayedDiv= div.firstChild.no
-
-    console.log(div)
-    console.log(displayedDiv)
-})

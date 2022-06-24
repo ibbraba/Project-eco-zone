@@ -15,7 +15,6 @@
     <body>
         {% block body %}
 
-            {# TODO Hide ad div if no ad #}
 
 
             {% block header %}
@@ -62,7 +61,12 @@
 
 
     <footer>
-        EcoZ0NE
+       <h2>Eco-Zone</h2>
+
+        <div>
+            <a href="{{ path("mentions") }}">Mentions légales</a>
+            <a href="{{ path("politique") }}">Politique de confidentialiité</a>
+        </div>
     </footer>
 
      {% endblock%}

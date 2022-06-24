@@ -122,7 +122,7 @@ class MainController extends AbstractController
             'controller_name' => 'MainController',
             'list'=> $list,
             'toparticle' => $topArticle,
-            "route"=> $route,
+            'route'=> $route,
             "categorie" => $category
         ]);
     }
@@ -150,4 +150,19 @@ class MainController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/mentions", name="mentions")
+     */
+    public function mentions():Response {
+        return $this->render("main/mentions.html.twig");
+    }
+
+    /**
+     * @Route("/politique-confidentialite", name="politique")
+     */
+    public function politique():Response {
+
+    return $this->render("main/politique.html.twig");
+
+    }
 }

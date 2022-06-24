@@ -31,7 +31,7 @@ class AppTest extends WebTestCase {
 
 
     // Test views count adding up
-    //TODO Test controller
+
   /*  public function test_views_count (){
 
         $client = static::createClient();

@@ -2,12 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1c5304d-77a7-4138-a00a-4205861ad2d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/routes/dev/framework.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/fixtures/example.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/1-getting-started/todo.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/actions.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/aliasing.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/assertions.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/connectors.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/cookies.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/cypress_api.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/files.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/local_storage.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/location.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/misc.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/navigation.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/network_requests.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/querying.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/spies_stubs_clocks.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/traversal.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/utilities.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/viewport.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/waiting.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/2-advanced-examples/window.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/sample_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/plugins/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/support/commands.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/support/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/main/mentions.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/main/politique.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/IntgestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IntgestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/intgestion/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/intgestion/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserTestFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserTestFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/AppTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/ArticleForm/ArticleFormTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ArticleForm/ArticleFormTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ArticleForm/ArticleFormTest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ArticleForm/ArticleFormTest.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ArticleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ArticleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/IntgControllerTest/IntgControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/IntgControllerTest/IntgControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +55,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -185,7 +230,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/ArticleForm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -244,7 +289,33 @@
       <workItem from="1637339902724" duration="1680000" />
       <workItem from="1637343376909" duration="1470000" />
       <workItem from="1637664861510" duration="50837000" />
-      <workItem from="1638185447490" duration="50197000" />
+      <workItem from="1638185447490" duration="50467000" />
+      <workItem from="1638952374663" duration="1850000" />
+      <workItem from="1639403747525" duration="4806000" />
+      <workItem from="1639647672900" duration="4498000" />
+      <workItem from="1639749042692" duration="379000" />
+      <workItem from="1639749687607" duration="6318000" />
+      <workItem from="1639911529771" duration="677000" />
+      <workItem from="1640250737446" duration="13000" />
+      <workItem from="1640251674292" duration="609000" />
+      <workItem from="1640600830370" duration="1232000" />
+      <workItem from="1640683767536" duration="20000" />
+      <workItem from="1640973140154" duration="710000" />
+      <workItem from="1641110141199" duration="23000" />
+      <workItem from="1641110849188" duration="3091000" />
+      <workItem from="1641160800661" duration="5632000" />
+      <workItem from="1643805851389" duration="126000" />
+      <workItem from="1643806101864" duration="72000" />
+      <workItem from="1645727054410" duration="1165000" />
+      <workItem from="1646673568827" duration="2124000" />
+      <workItem from="1646760412227" duration="11000" />
+      <workItem from="1646760436625" duration="1211000" />
+      <workItem from="1647357038214" duration="1465000" />
+      <workItem from="1647365501657" duration="46000" />
+      <workItem from="1649429730799" duration="16000" />
+      <workItem from="1650467711188" duration="4000" />
+      <workItem from="1650467988937" duration="624000" />
+      <workItem from="1654871351598" duration="1790000" />
     </task>
     <servers />
   </component>

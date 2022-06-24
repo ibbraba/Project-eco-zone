@@ -6,36 +6,7 @@
 {# TODO Find right article spacement, police size and line height (see other site) (mobile version included #}
 
 {% block content %}
-   {# <h1>Article</h1>
 
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ article.id }}</td>
-            </tr>
-            <tr>
-                <th>Titre</th>
-                <td>{{ article.titre }}</td>
-            </tr>
-            <tr>
-                <th>Content</th>
-                <td>{{ article.content }}</td>
-            </tr>
-            <tr>
-                <th>Date</th>
-                <td>{{ article.date ? article.date|date('Y-m-d H:i:s') : '' }}</td>
-            </tr>
-            <tr>
-                <th>Preview</th>
-                <td>{{ article.preview }}</td>
-            </tr>
-            <tr>
-                <th>Categorie</th>
-                <td>{{ article.categorie }}</td>
-            </tr>
-        </tbody>
-    </table>#}
 <div class="article-container">
     <div class="article-full">
         <div class="article-title">
@@ -64,7 +35,7 @@
     <div class="article-bottom">
 
         <a class="btn btn-primary" href="{{ path('main') }}">Retour à l'acceuil</a>
-        <a class="btn btn-primary" href="{{ route }}"> Retour à {{ article.categorie }}</a>
+        {#  <a class="btn btn-primary" href="{{ path(route) }}"> Retour à {{ article.categorie }}</a> #}
 {#        TODO: Create back to category button #}
 
 
@@ -72,10 +43,7 @@
     </div>
 
 
-    <div class="pub pub-bottom">0
 
-            AD n°3
-    </div>
 
 
 {% endblock %}

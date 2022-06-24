@@ -23,7 +23,7 @@ class IntgControllerTest extends WebTestCase
 {
     /**
      *
-     * TODO File test for ArticleForm
+     *
      * @var AbstractDatabaseTool
      */
     protected $databaseTool
@@ -116,20 +116,7 @@ class IntgControllerTest extends WebTestCase
     }
 
 
-    //TODO Article created deleted, and edited flash (create var=true in controller and render)
 
-    /*
-     * TODO In File ArticleFormTest
-     */
-//    public function test_flash_success_on_article(){}
-
-
-
-
-    /*
-     * TODO In File ArticleFormTest
-     */
-    //TODO Make sure an article is created or deleted by counting number of articles
 
 
 

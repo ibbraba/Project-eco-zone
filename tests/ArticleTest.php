@@ -21,7 +21,7 @@ class ArticleTest extends TestCase
 {
     /**
      *
-     * TODO File test for ArticleForm
+     *
      * @var AbstractDatabaseTool
      */
     protected $databaseTool
